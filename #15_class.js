@@ -38,3 +38,20 @@ const janker = new Teacher('Janker Mahbub', 'Programming Language')
 const suma = new Teacher('Sumaya Akter', 'English')
 console.log(janker);
 console.log(suma);
+
+// TODO: creating object with constructor
+class Vehicle{
+    constructor(brand, model,color, year){
+        this.brand = brand;
+        this.model = model;
+        this.color = color;
+        this.year = year;
+    }
+
+    getName() { 
+        return this.brand + ' ' + this.model;
+    }
+}
+
+const car = new Vehicle('Toyota', 'Corolla', 'Red', 2021);
+console.log(car);
